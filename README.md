@@ -11,7 +11,8 @@ make pipeline     # build the database, run parts 2–4, write outputs/
 make dashboard    # launch the interactive dashboard
 ```
 
-**Dashboard:** <!-- TODO: paste the deployed Streamlit URL here --> _(link pending deployment)_
+- **Live dashboard:** https://teiko-cell-count-analysis-mcw8kqnedmmxy9qczl9xyx.streamlit.app
+- **Repository:** https://github.com/JC01111/teiko-cell-count-analysis
 
 ---
 
@@ -249,11 +250,15 @@ cohort** button restores the assignment's cohort.
 If `db/cell_counts.db` is missing the dashboard builds it from `data/cell-count.csv` on
 first launch, so a fresh clone or a cloud deployment works with no extra steps.
 
-### Deploying
+### Hosted version
 
-The app is deployable as-is to Streamlit Community Cloud: point it at this repo with
-`dashboard/app.py` as the entrypoint and `requirements.txt` as the dependency file.
-No secrets, no external services — the database is rebuilt from the committed CSV at boot.
+https://teiko-cell-count-analysis-mcw8kqnedmmxy9qczl9xyx.streamlit.app
+
+Deployed on Streamlit Community Cloud straight from this repository —
+`dashboard/app.py` as the entrypoint, `requirements.txt` for dependencies. No secrets and
+no external services: the database is rebuilt from the committed CSV on first boot, which
+is why the deployment needs no build step. `make dashboard` runs the identical app
+locally on <http://localhost:8501>.
 
 ---
 
