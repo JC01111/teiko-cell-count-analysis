@@ -1,0 +1,10 @@
+# Runtime dependencies (Python >= 3.9)
+pandas>=1.5
+numpy>=1.23
+scipy>=1.9
+matplotlib>=3.6
+seaborn>=0.12
+statsmodels>=0.13
+streamlit>=1.49
+plotly>=5.15
+pytest>=7.0

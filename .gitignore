@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+
+# Generated: rebuilt by `make pipeline`
+db/*.db
+outputs/cell_frequencies.csv
+outputs/part3_cohort_frequencies.csv
